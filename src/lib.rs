@@ -13,6 +13,7 @@ use std::thread;
 use std::time::Duration;
 use std::time::Instant;
 
+
 #[derive(Parser, Debug)]
 #[clap(author = "erkelost", version = "0.1")]
 pub struct Args {
