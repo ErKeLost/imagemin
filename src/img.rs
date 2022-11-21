@@ -21,6 +21,7 @@ pub fn img_run(
     let deep = (args.deep as f32) / 10f32;
     for imageinfo in list {
         let img = image::open(&imageinfo.prev.path)?;
+        // println!("{:?}, 获取图片", img);
         let (width, height) = img.dimensions();
         println!("图片width: {:?} 图片height: {:?}", width, height);
         let new_width = ((width as f32) * deep) as u32;
